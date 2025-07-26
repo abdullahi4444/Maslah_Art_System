@@ -25,96 +25,99 @@ Welcome to the **Maslah Arts** system repository. This project is built by a tea
 
 
 ---
-## 🗂️ Project Structure
 
+# 📂 Project Structure — Maslah Arts 🎨
+
+This structure outlines every file, its purpose, and the responsible team members. Each section is clearly labeled to ensure everyone understands their role in the system.
+
+```
 MaslahArts/
-│
-├── index.php
-│   # Homepage (Landing page with site overview, designed by Maymun)
-│
-├── Includes/                          # Common components (by Abdiqadir Aydid)
-│   ├── header.php                    # Top site navigation and branding
-│   ├── footer.php                    # Bottom footer with links and contact
-│   └── auth.php                      # Authentication (login/session functions)
-│
-├── Blogs/                             # Blog & Shop section (by Hafsa)
-│   ├── news.php                      # News articles, updates, and posts
-│   └── shop.php                      # Online shop for purchasing artwork
-│
-├── Gallery/                           # Art categories (by Ismail & Fa’iza)
-│   ├── original.php                  # Original paintings/art
-│   ├── printed.php                   # Artworks available as prints
-│   ├── photography.php               # Photography gallery
-│   └── digital.php                   # Digital artwork showcase
-│
-├── Students/                          # Student Portal (by Musab & Hassna)
-│   ├── login.php                     # Student login page
-│   ├── dashboard.php                 # Dashboard for student activity
-│   ├── profile.php                   # View/edit student profile
-│   ├── artworks.php                  # Submitted student artworks
-│   └── certificates.php              # Certificate display/download page
-│
-├── Admin/                             # Admin Tools (by Asiya & Abdullahi Mohammed)
-│   ├── login.php                     # Admin login
-│   ├── dashboard.php                 # Admin control panel
-│   ├── manage-students.php           # Student management (CRUD)
-│   └── upload-resources.php          # Upload tools/resources for students
-│
-├── Workshops/                         # Event registration (by Abdullahi Abdiweli)
-│   ├── upcoming.php                  # Upcoming workshops
-│   ├── past.php                      # Completed workshop archive
-│   └── register.php                  # Registration form
-│
-├── Courses/                           # Learning section (by Amina & Abubakar)
-│   ├── enroll.php                    # Course enrollment page
-│   ├── materials.php                 # Study materials and lectures
-│   └── assignments.php               # Coursework and submissions
-│
-├── Community/                         # Forum & discussions (by Mohammed)
-│   ├── forums.php                    # Community discussion boards
-│   ├── qa.php                        # Q&A for students/artists
-│   ├── peer-review.php               # Peer reviews of artwork
-│   └── mentorship.php                # Mentor matching and sessions
-│
-├── Events/                            # Gallery events (by Iman)
-│   ├── exhibitions.php               # Upcoming exhibitions
-│   ├── competitions.php              # Art competitions
-│   └── live.php                      # Live virtual events
-│
-├── Donations/                         # Fundraising (by Hamdi & Kawther)
-│   ├── donate.php                    # Donation form
-│   ├── sponsor.php                   # Sponsorship info
-│   └── support.php                   # General support for the platform
-│
-├── About/                             # About us (by Sumayo)
-│   ├── mission.php                   # Organization mission and goals
-│   ├── team.php                      # Meet the team page
-│   └── history.php                   # Background and history of the project
-│
-├── Contact/                           # Contact info (by Malyuun)
-│   ├── form.php                      # Contact form
-│   ├── social.php                    # Social media links
-│   └── map.php                       # Location map
-│
-├── Help/                              # Support docs (by Ilhan)
-│   ├── getting-started.php           # How to use the site
-│   ├── account-issues.php            # Account/login issue help
-│   └── guidelines.php                # Rules and guidelines
-│
-├── assets/                            # Static frontend assets
+├── index.php                  # Homepage (Landing page by Maymun)
+
+├── Includes/                  # Common components (Abdiqadir Aydid)
+│   ├── header.php             # Top navigation
+│   ├── footer.php             # Footer section
+│   └── auth.php               # Login/session logic
+
+├── Blogs/                     # Blog & Shop (Hafsa)
+│   ├── news.php               # News articles
+│   └── shop.php               # Artwork shop
+
+├── Gallery/                   # Art display (Ismail & Fa'iza)
+│   ├── original.php           # Original artwork
+│   ├── printed.php            # Prints
+│   ├── photography.php        # Photo gallery
+│   └── digital.php            # Digital art
+
+├── Students/                  # Student portal (Musab & Hassna)
+│   ├── login.php              # Student login page
+│   ├── dashboard.php          # Student dashboard
+│   ├── profile.php            # Edit/view profile
+│   ├── artworks.php           # Student artwork submissions
+│   └── certificates.php       # Certificate display/download
+
+├── Admin/                     # Admin panel (Asiya & Abdullahi Mohammed)
+│   ├── login.php              # Admin login
+│   ├── dashboard.php          # Admin dashboard
+│   ├── manage-students.php    # Manage students (CRUD)
+│   └── upload-resources.php   # Upload tools/resources
+
+├── Workshops/                 # Event registration (Abdullahi Abdiweli)
+│   ├── upcoming.php           # Upcoming workshops
+│   ├── past.php               # Past events archive
+│   └── register.php           # Registration page
+
+├── Courses/                   # Learning modules (Amina & Abubakar)
+│   ├── enroll.php             # Course enrollment
+│   ├── materials.php          # Study materials
+│   └── assignments.php        # Course assignments
+
+├── Community/                 # Forums and peer interaction (Mohammed)
+│   ├── forums.php             # Community discussion
+│   ├── qa.php                 # Q&A board
+│   ├── peer-review.php        # Peer reviews
+│   └── mentorship.php         # Mentorship hub
+
+├── Events/                    # Exhibitions & Competitions (Iman)
+│   ├── exhibitions.php        # Upcoming exhibitions
+│   ├── competitions.php       # Competitions section
+│   └── live.php               # Live events (streaming)
+
+├── Donations/                 # Support & sponsorship (Hamdi & Kawther)
+│   ├── donate.php             # Donation form
+│   ├── sponsor.php            # Sponsorship info
+│   └── support.php            # General support options
+
+├── About/                     # Organization info (Sumayo)
+│   ├── mission.php            # Our mission
+│   ├── team.php               # Meet the team
+│   └── history.php            # Project history
+
+├── Contact/                   # Contact page (Malyuun)
+│   ├── form.php               # Contact form
+│   ├── social.php             # Social media links
+│   └── map.php                # Location map
+
+├── Help/                      # Documentation (Ilhan)
+│   ├── getting-started.php    # Intro and how to use
+│   ├── account-issues.php     # Help with accounts
+│   └── guidelines.php         # Rules & community guidelines
+
+├── assets/                    # Static frontend files
 │   ├── css/
-│   │   └── style.css                 # Main stylesheet
+│   │   └── style.css          # Main stylesheet
 │   ├── js/
-│   │   └── script.js                 # Client-side JavaScript
+│   │   └── script.js          # JavaScript interactions
 │   └── images/
-│       ├── logo.png                  # Project logo
-│       └── banner.jpg                # Homepage banner image
-│
-├── config/                            # Configuration files
-│   └── db.php                        # Database connection settings
-│
-├── README.md                          # Project documentation and credits
-└── .gitignore                         # Files/folders ignored by Git
+│       ├── logo.png           # Site logo
+│       └── banner.jpg         # Banner image
+
+├── config/
+│   └── db.php                 # Database configuration
+
+├── README.md                  # Project overview and credits
+└── .gitignore                 # Git ignore rules
+```
 
 ## 🤝 Collaboration Approach
 
