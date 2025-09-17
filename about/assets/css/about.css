@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Dejinta Guud */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+    color: #4B5563;
+    overflow-x: hidden; /* Ka hortag in boggu ballaariyo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #141217;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #7B1FA2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5B21B6;
+}
+
+/* Qaybaha Midabka leh */
+.hero-section, .mission-vision-section, .values-section, .join-section {
+    background-color: #5B21B6; /* Midabka ugu muhiimsan */
+    color: #FFFFFF;
+}
+
+.hero-section h1, .mission-vision-section h2, .values-section h2, .join-section h2,
+.hero-section p, .mission-vision-section p, .values-section p, .join-section p {
+    color: #FFFFFF;
+}
+
+.hero-section {
+    padding: 100px 0;
+    position: relative;
+    background: url('../images/img-1.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(91, 33, 182, 0.6); /* Overlay hufnaan leh */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Qoraalka si muuqdo */
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: #f5f3f6;
+    padding: 60px 0;
+}
+
+
+
+
+
+/* Mission & Vision Section */
+
+.mission-vision-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #efe8fb 0%, #f0eaff 100%);
+    position: relative;
+    overflow: hidden;
+}
+.mission-vision-section::before {
+    content: '';
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #6433f8 0%, rgba(110, 68, 255, 0) 70%);
+    opacity: 0.3;
+    z-index: 0;
+}
+.mission-vision-section::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #fb1df0 0%, rgba(255, 77, 141, 0) 70%);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.mission-vision-section h2 {
+    color: #141217;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Styles */
+.card-custom {
+    position: relative;
+    background: linear-gradient(135deg, rgba(123, 63, 228, 0.95), rgba(79, 60, 201, 0.95));
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Background Decoration with Animated Gradient */
+.card-custom::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+    animation: rotateBackground 10s linear infinite;
+    z-index: 0;
+}
+/* Card Hover Effects */
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Headings */
+.card-custom h3 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Paragraphs inside cards */
+.card-custom p {
+    color: #f0f0f0;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* List Style */
+.card-custom ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card-custom ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.card-custom ul li:hover {
+    color: #ffd700; /* Gold highlight on hover */
+}
+
+/* Icons (FontAwesome or Images) */
+.card-custom ul li .fa-check-circle {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-custom ul li:hover .fa-check-circle {
+    transform: rotate(20deg) scale(1.2);
+    color: #00ffcc; /* Aqua glow on hover */
+}
+
+/* Icon inside mission & vision cards */
+.card-custom img {
+    background-color: #ffffff; /* White background */
+    border-radius: 30%; /* Makes it circular */
+    padding: 12px; /* Space around the icon */
+    width: 60px; /* Adjust icon size */
+    height: 60px; 
+    object-fit: contain; /* Keep icon ratio */
+    display: block;
+    margin-bottom: 15px; /* Space below icon */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
+    border: 2px solid #c0c0c0; /* Silver border */
+}
+
+
+
+
+
+
+/* Section Background */
+.values-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #efe8fb 0%, #f0eaff 100%);
+    position: relative;
+    overflow: hidden;
+}
+.values-section::before {
+    content: '';
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #6433f8 0%, rgba(110, 68, 255, 0) 70%);
+    opacity: 0.3;
+    z-index: 0;
+}
+.values-section::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #fb1df0 0%, rgba(255, 77, 141, 0) 70%);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+/* Title */
+.values-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #141217;
+    margin-bottom: 10px;
+}
+
+.values-section p {
+    font-size: 1rem;
+    color: #5A5A5A;
+    margin-bottom: 40px;
+}
+
+/* Cards Wrapper */
+.values-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.value-card {
+    flex: 1 1 250px; /* Flexible and responsive */
+    max-width: 320px;
+    max-height: 520px;
+    background: linear-gradient(135deg, rgba(174, 75, 216, 0.95), rgba(135, 88, 228, 0.95));
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle moving gradient animation */
+.value-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+    animation: valueGlow 12s linear infinite;
+    z-index: 0;
+}
+
+/* Hover lift effect */
+.value-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+
+/* Icon hover effect */
+.value-card:hover .icon-box {
+    transform: rotate(10deg) scale(1.1);
+    background: linear-gradient(145deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+}
+
+/* Card Heading */
+.value-card h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Text */
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animated gradient glow for background */
+@keyframes valueGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Slider Buttons */
+.slider-btn {
+    position: absolute;
+    bottom: -60px;
+    background: linear-gradient(135deg, #9b4dca, #5a1480);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect for slider buttons */
+.slider-btn:hover {
+    background: linear-gradient(135deg, #b06ef5, #731ba8);
+    transform: scale(1.15);
+}
+
+/* Left button */
+.slider-btn.prev {
+    left: 45%;
+    margin-right: 10px;
+    transform: translateX(-50%);
+}
+
+/* Right button */
+.slider-btn.next {
+    left: 55%;
+    margin-left: 10px;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* Location Section */
+.location-section {
+    background-color: #F3F4F6;
+}
+
+.location-section h4 {
+    color: #5B21B6;
+    font-weight: bold;
+}
+
+/* Join Section */
+.join-section {
+    padding: 80px 0;
+    position: relative;
+    background: url('../images/img-4.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    color: #fff;
+}
+
+.join-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(91, 33, 182, 0.5);
+    z-index: 1;
+}
+
+.join-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Buttons */
+.btn-light {
+    background-color: #FFFFFF;
+    color: #5B21B6;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.btn-outline-light {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+/* Section Titles */
+.section-title {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #7C3AED;
+    border-radius: 2px;
+}
+
+.visit-gallery {
+  display: inline-flex;
+  align-items: center;
+  color: #9708d4; /* Midabka aad rabto */
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.visit-gallery i {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+
+/* Optional: Icon moves a bit on hover */
+.visit-gallery:hover i {
+  transform: translateX(5px);
+}
+.bbc-logo {
+  width: 50px;
+  height: auto;
+  border-radius: 8px; /* Geesaha wareegsan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hooska */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Haddii la rabo in uu la falgalo */
+}
+
+.bbc-logo:hover {
+  transform: scale(1.1); /* Kordhi cabbirka marka la dul istaago */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Hooska oo xoog badan */
+}
+
+/* Media Links */
+.media-link:hover {
+    background-color: #7C3AED20; /* light purple transparent */
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.media-link h5 {
+    margin-bottom: 0.25rem;
+    color: #7C3AED;
+}
+
+.media-link small {
+    color: #555;
+}
+
+
+/* 📱 Mobile & Tablet Responsive Styles */
+
+/* Screens smaller than 992px (Tablet and below) */
+@media (max-width: 992px) {
+
+    /* Mission & Vision cards stack vertically */
+    .mission-vision-section .row {
+        flex-direction: column;
+    }
+
+    .card-custom {
+        margin-bottom: 20px;
+    }
+
+    /* Values section cards */
+    .values-section .row {
+        flex-direction: column;
+    }
+
+    .value-card {
+        margin-bottom: 20px;
+    }
+
+    /* Hero section text center */
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    /* Join section text center */
+    .join-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+}
+
+/* Screens smaller than 768px (Mobile phones) */
+@media (max-width: 768px) {
+
+    /* General text adjustments */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Padding reduction for sections */
+    .mission-vision-section,
+    .values-section,
+    .join-section {
+        padding: 40px 15px;
+    }
+
+    /* Cards take full width */
+    .card-custom,
+    .value-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Buttons smaller */
+    .btn-light,
+    .btn-outline-light {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .our-story-section {
+        padding: 40px 15px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .our-story-section .data {
+        text-align: left;
+    }
+}
+
+/* Screens smaller than 576px (Small mobile) */
+@media (max-width: 576px) {
+
+    /* Hero text smaller */
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    /* Section titles smaller */
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    /* Center all text in small devices */
+    .mission-vision-section h2,
+    .values-section h2,
+    .join-section h2 {
+        text-align: center;
+    }
+    .our-story-section {
+        padding: 40px 15px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .our-story-section .data {
+        text-align: left;
+    }
+}
